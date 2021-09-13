@@ -30,16 +30,16 @@ public class Cadastro {
 						"Insira sua senha.", "Cadastro", JOptionPane.INFORMATION_MESSAGE);
 				do {
 				cpf = JOptionPane.showInputDialog(null, 
-						"Re-Insira seu CPF (Sem m·scara)", null, JOptionPane.INFORMATION_MESSAGE);
+						"Insira seu CPF (Sem m√°scara)", null, JOptionPane.INFORMATION_MESSAGE);
 						if (!IntegridadeCPF.CPF(cpf)) {
-							JOptionPane.showMessageDialog(null, "O CPF:"+cpf+"\n… inv·lido.", "Cadastro", JOptionPane.ERROR_MESSAGE);
+							JOptionPane.showMessageDialog(null, "O CPF:"+cpf+"\n√â inv√°lido.", "Cadastro", JOptionPane.ERROR_MESSAGE);
 						}
 				} while(!IntegridadeCPF.CPF(cpf));
 				String nascimento = JOptionPane.showInputDialog(null, 
 						"Insira sua data de nascimento", null, JOptionPane.INFORMATION_MESSAGE);
 				usuarios.add(new Conta(nome, sobrenome, cpf, nascimento, senha, contador));
 				contador += 1;
-				JOptionPane.showMessageDialog(null, "Par·bens, Cadastro feito", "Cadastro", JOptionPane.PLAIN_MESSAGE);
+				JOptionPane.showMessageDialog(null, "Par√°bens, Cadastro feito", "Cadastro", JOptionPane.PLAIN_MESSAGE);
 			}
 			else if(opc[opp] == "Logar") {
 				String nome_laranja = JOptionPane.showInputDialog(null, "Insira seu nome.", "Cadastro", JOptionPane.INFORMATION_MESSAGE);
@@ -56,7 +56,7 @@ public class Cadastro {
 				
 			}
 			else {
-				JOptionPane.showMessageDialog(null,"O programa est· sendo"+
+				JOptionPane.showMessageDialog(null,"O programa est√° sendo"+
 			" finalizado!", null, JOptionPane.WARNING_MESSAGE);
 				System.exit(0);
 			}
