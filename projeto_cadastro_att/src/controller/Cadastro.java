@@ -20,7 +20,6 @@ public class Cadastro {
 			"Deseja Criar sua conta ou logar-se?", "Cadastro", 
 			JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, 
 			null, opc, opc[0]);
-
 			if ((String)opc[opp] == "Criar conta") {
 				String nome = JOptionPane.showInputDialog(null, 
 						"Insira seu nome", "Cadastro", JOptionPane.INFORMATION_MESSAGE);
@@ -46,13 +45,12 @@ public class Cadastro {
 				String senha_laranja = JOptionPane.showInputDialog(null, "Insira sua senha.", "Cadastro", JOptionPane.INFORMATION_MESSAGE);
 				for(int x = 0; x<usuarios.size(); x++) {
 					users = usuarios.get(x);
+					System.out.println(users);
+					System.out.println(usuarios);
 					if(users.login(nome_laranja, senha_laranja)) {
 						System.out.println("Login efetuado");
 						break;
-						}
-					System.out.println(users.toString());
-				}
-				
+						}}
 				
 			}
 			else {

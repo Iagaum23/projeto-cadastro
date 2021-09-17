@@ -20,38 +20,15 @@ public class Conta {
 		this.senha = senha;
 	}
 	
-	public int getId_conta() {
-		return id_conta;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public String getSobrenome() {
-		return sobrenome;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public String getNascimento() {
-		return nascimento;
-	}
-
-	public String getSenha() {
-		return senha;
-	}
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "\nNome:"+getNome()+"\nCPF:"+getCpf()+"\nSenha:"+getSenha()+"\n"+
-				"Nascimento:"+getNascimento()+"\nId da conta:"+getId_conta();
+		return "\nNome:"+this.nome+"\nCPF:"+this.cpf+"\nSenha:"+this.senha+"\n"+
+				"Nascimento:"+this.nascimento+"\nId da conta:"+this.id_conta;
 	}
 	public boolean login(String nome, String senha) {
 		// Para se verificar o conteúdo em sí, se usa o .equals
-		if (nome.equals(getNome()) && senha.equals(getSenha())) {
+		if (nome.equals(this.nome) && senha.equals(this.senha)) {
 			return true;
 		}
 		return false;
