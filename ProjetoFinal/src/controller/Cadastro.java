@@ -5,13 +5,13 @@ import java.util.List;
 import model.Conta;
 import util.Teclado;
 
-public class BomDIa {
+public class Cadastro{
 
 	public static void main(String[] args) {
 		Conta users = null;
 		List<Conta> usuarios = new ArrayList<Conta>();
 		do {
-			int opc = Teclado.lerInt("Você deseja:\n1)Logar\n2)Criar\n3)Sair\nR:");
+			int opc = Teclado.lerInt("VocÃª deseja:\n1)Logar\n2)Criar\n3)Sair\nR:");
 			if (opc == 1) {
 				String nome_laranja = Teclado.lerTexto("Insira seu nome:");
 				String senha_laranja = Teclado.lerTexto("Insira seu senha:");
